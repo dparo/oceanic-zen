@@ -8,7 +8,7 @@
         {% for p in section.pages %}
             <li>
                 <a href="{{ p.permalink | safe}}">
-                    {{ p.title }}
+                    {{ p.date | date(format="%d %b %Y") }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ p.title }}
                 </a>
             </li>
         {% endfor %}
